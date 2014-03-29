@@ -14,7 +14,7 @@ For presentation at the WP518 Meetup on Wed. April 6th 2014.
   * [_less] [5] from Eric Frisino's Repository
   
   
-  [3]: https://github.com/Automattic/_s	"_s"
+  [3]: https://github.com/Automattic/_s
   [4]: http://automattic.com
   [5]: https://github.com/ericfrisino/_less
 
