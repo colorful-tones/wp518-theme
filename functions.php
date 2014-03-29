@@ -86,6 +86,8 @@ add_action( 'widgets_init', 'wp518_widgets_init' );
 function wp518_scripts() {
 	wp_enqueue_style( 'wp518-style', get_stylesheet_uri() );
 
+    wp_enqueue_style( 'wp518-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Kreon:400,700');
+
 	wp_enqueue_script( 'wp518-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'wp518-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
