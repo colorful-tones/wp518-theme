@@ -84,7 +84,10 @@ add_action( 'widgets_init', 'wp518_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wp518_scripts() {
-	wp_enqueue_style( 'wp518-style', get_stylesheet_uri() );
+    /* Insert Grid stylesheet in head */
+	wp_enqueue_style( 'wp518-grid', get_template_directory_uri() . '/css/gridism.css', array(), NULL );
+	/* Insert general stylesheet in head too */
+	wp_enqueue_style( 'wp518-style', get_stylesheet_uri(), array(), NULL );
 
     wp_enqueue_style( 'wp518-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Kreon:400,700');
 
