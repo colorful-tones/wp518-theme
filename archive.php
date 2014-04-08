@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<section id="primary" class="content-area unit golden-large">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>

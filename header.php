@@ -22,12 +22,12 @@
 <div id="page" class="hfeed wider site">
 
 	<header id="masthead" class="site-header grid" role="banner">
-		<div class="site-branding grid">
+		<div class="site-branding unit whole">
 			<a href="<?php echo home_url(); ?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/img/shirt-shack-logo.png" alt="Shirt Shack" /></a>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav id="site-navigation" class="main-navigation unit whole" role="navigation">
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'wp518' ); ?></h1>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'wp518' ); ?></a>
 
