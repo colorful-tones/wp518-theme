@@ -367,8 +367,14 @@ textarea {
 /*--------------------------------------------------------------
 5.0 Header
 --------------------------------------------------------------*/
+#page .site-header {
+    margin-top: 2em;
+    background-color: white;
+}
 .site-branding {
     text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
 }
 .site-description {
     font-size: 1em;     
@@ -380,38 +386,55 @@ textarea {
 /*--------------------------------------------------------------
 6.1 Links
 --------------------------------------------------------------*/
-a {
-	color: royalblue;
-}
+a,
 a:visited {
-	color: purple;
+	color: #FF0051;
+	text-decoration: none;
 }
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #4B490B;
+	text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
 6.2 Menus
 --------------------------------------------------------------*/
+#site-navigation {
+    padding: 0;
+}
 .main-navigation {
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
+	padding: 0;
+	background-color: #757449;
 }
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+	font-size: 18px;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	text-align: left;
+}
+.main-navigation .menu > ul {
+    text-align: center;
 }
 .main-navigation li {
-	float: left;
 	position: relative;
+}
+.main-navigation .nav-menu > li {
+    display: inline-block;
 }
 .main-navigation a {
 	display: block;
+	padding: 18px 16px;
+	line-height: 1;
+	color: white;
 	text-decoration: none;
 }
 .main-navigation ul ul {
@@ -420,7 +443,7 @@ a:active {
 	float: left;
 	left: 0;
 	position: absolute;
-	top: 1.5em;
+	top: 3em;
 	z-index: 99999;
 }
 .main-navigation ul ul ul {
@@ -433,13 +456,17 @@ a:active {
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
+    background: #4B490B;
 }
 .main-navigation ul ul :hover > a {
+    background: #323000;
 }
 .main-navigation ul ul a:hover {
+    background: #323000;
 }
 .main-navigation ul li:hover > ul {
 	display: block;
+	background: #4B490B;
 }
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a {
@@ -450,14 +477,78 @@ a:active {
 	display: none;
 }
 @media screen and (max-width: 600px) {
-	.menu-toggle,
+	#site-navigation {
+    	    text-align: center;
+	}
+	.menu-toggle {
+    	    font-size: 20px;
+    	    font-size: 2.0rem;
+    	    color: white;
+    	    text-align: center;
+    	    padding: 10px 16px;
+    	    background-color: #757449;
+    	    display: inline-block;
+    	    border: 1px solid #323000;
+        background-repeat: repeat-x;
+        background-image: -moz-linear-gradient(top, #757449, #5C5B30);
+        background-image: -ms-linear-gradient(top, #757449, #5C5B30);
+        background-image: -webkit-linear-gradient(top, #757449, #5C5B30);
+        background-image: -o-linear-gradient(top, #757449, #5C5B30);
+        background-image: linear-gradient(top, #757449, #5C5B30);
+	}
+	.menu-toggle:hover {
+        background-repeat: repeat-x;
+        background-image: -moz-linear-gradient(top, #949368, #757449);
+        background-image: -ms-linear-gradient(top, #949368, #757449);
+        background-image: -webkit-linear-gradient(top, #949368, #757449);
+        background-image: -o-linear-gradient(top, #949368, #757449);
+        background-image: linear-gradient(top, #949368, #757449);
+
+	}
 	.main-navigation.toggled .nav-menu {
 		display: block;
 	}
 
+    .main-navigation {
+        background: none;
+    }
 	.main-navigation ul {
 		display: none;
 	}
+	.main-navigation .menu {
+    	    background-color: #757449;
+	}
+    .main-navigation .menu > ul {
+        text-align: left;
+    }
+    .main-navigation .nav-menu > li {
+        display: block;
+    }
+    .main-navigation .nav-menu > li:last-child {
+        border-bottom: 1px solid #323000;
+    }
+    .main-navigation .nav-menu li {
+        border-top: 1px solid #323000;
+    }
+    .main-navigation ul ul {
+        box-shadow: none;
+        display: block;
+        float: none;
+        position: relative;
+        top: 0;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .main-navigation ul ul ul {
+        left: 0;
+    }
+    .main-navigation ul ul a {
+        width: 100%;
+    }
+    .grid {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 .site-main .comment-navigation,
 .site-main .paging-navigation,
@@ -576,6 +667,11 @@ a:active {
 /*--------------------------------------------------------------
 11.0 Content
 --------------------------------------------------------------*/
+#content {
+    background-color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
 /*--------------------------------------------------------------
 11.1 Posts and pages
 --------------------------------------------------------------*/
